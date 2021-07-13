@@ -1,1 +1,1 @@
-# rsschool-cv
+# https://turn2river.github.io/rsschool-cv/cv
