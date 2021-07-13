@@ -8,7 +8,7 @@
 
 ## Contacts
 
----
+
 
 phone number: +7(926) 416-10-40 
 
@@ -18,13 +18,13 @@ discord: ADLINN#9697
 
 
 ## About
----
+
 
 About me
 
 
 ## Skills
----
+
 
 - HTML
 - CSS
@@ -35,7 +35,7 @@ About me
 
 
 ## CodeExamples
----
+
 ### Codewars
 
 #### Task
