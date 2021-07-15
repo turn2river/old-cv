@@ -6,7 +6,13 @@ email: turn2river@gmail.com
 discord: ADLINN#9697
 
 ## About
-About me
+Hi there! My name is Alexey Krylov and I am career changer.   
+I have: 
+- 5+ years of graphic design experience including basic knowledge of web design and UX/UI
+- 4+ years of 3D modeling and visualization experience
+- 4+ years of game- and level- design experience   
+
+And now it's time to explore this wonderful world of programming.
 
 ## Skills
 ### Tech stack
