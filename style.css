@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto Mono, monospace;
+  background-color: #131313;
+  color: #bebebe;
+  height: 100vh;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  display: inline-block;
+  border-bottom: 2px solid rgb(230, 175, 27);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(230, 175, 27);
+}
+
+.yellow_text {
+  color: rgb(230, 175, 27);
+}
+
+.page__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 20px;
+}
+
+.scroll-button {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.scroll-button :hover {
+  color: rgb(162, 0, 255);
+}
+
+.scroll-down {
+  position: absolute;
+  top: calc(100vh - 45px);
+  color: rgb(230, 175, 27);
+  font-size: 2rem;
+}
+
+.scroll-down :hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-up {
+  position: absolute;
+  top: calc(100vh);
+  color: rgb(230, 175, 27);
+  font-size: 2rem;
+}
+
+.scroll-up :hover {
+  transform: translateY(5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.home__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home__image {
+  max-height: 700px;
+}
+
+.home__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.home__text h2 {
+  padding-top: 20px;
+}
+
+.contacts__item :hover {
+  color: rgb(162, 0, 255);
+}
+
+.skills__wrapper {
+  padding-top: 20px;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.skills__wrapper ul {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.skills__wrapper ul li {
+  font-size: 1rem;
+}
+.code__wrapper {
+  padding-top: 20px;
+}
+
+.skills__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 10px;
+  font-size: 1.25rem;
+}
+
+.skills__item {
+  padding-bottom: 20px;
+}
+
+.code-example p {
+  padding: 0.4rem;
+  font-size: 1rem;
+  background-color: rgb(37, 37, 37);
+  margin: 10px 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 10px 0;
+  border-top: 1px solid rgb(37, 37, 37);
+}
+
+.footer a {
+  font-size: 2rem;
+  padding-left: 10px;
+}
+
+.footer a :hover {
+  color: rgb(162, 0, 255);
+}
+
+.rsschool-logo img {
+  height: 50px;
+  padding-top: 10px;
+  filter: invert(80%) sepia(0%) saturate(0%) hue-rotate(177deg) brightness(95%) contrast(94%);
+}
+
+.rsschool-logo :hover {
+  transform: scale(0.92);
+  transition: all 0.3s ease;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+}
+.english__inner ul {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.english__wrapper {
+  padding-top: 20px;
+}
+
+.english__inner ul li {
+  font-size: 1rem;
+}
+
+.footer-helper {
+  height: calc(100vh - 60px);
+}
+
+@media (max-width: 1359px) {
+  .scroll-down,
+  .scroll-up {
+    display: none;
+  }
+}
+
+@media (max-height: 700px) {
+  .section {
+    height: max-content;
+  }
+  .scroll-up,
+  .scroll-down {
+    display: none;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 420px) {
+  .section {
+    height: max-content;
+  }
+  .scroll-up,
+  .scroll-down {
+    display: none;
+  }
+}
+
+@media (max-width: 796px) {
+  .home__image {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
