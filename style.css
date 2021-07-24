@@ -10,7 +10,7 @@ body {
   background-color: #131313;
   color: #bebebe;
   height: 100vh;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 h1 {
@@ -32,16 +32,12 @@ ul {
 
 a {
   text-decoration: none;
-  color: #bebebe;
+  color: rgb(230, 175, 27);
 }
 
 .yellow_text {
   color: rgb(230, 175, 27);
 }
-
-/* .purple_text {
-  color: rgb(162, 0, 255);
-} */
 
 .page__container {
   margin: 0 auto;
@@ -52,7 +48,6 @@ a {
 
 .scroll-button {
   text-decoration: none;
-  color: #bebebe;
   font-size: 1.1rem;
 }
 .scroll-button :hover {
@@ -61,9 +56,8 @@ a {
 
 .scroll-down {
   position: absolute;
-  top: calc(100vh - 40px);
+  top: calc(100vh - 45px);
   color: rgb(230, 175, 27);
-
   font-size: 2rem;
 }
 
@@ -91,6 +85,7 @@ a {
   width: 100%;
   max-width: 1200px;
   height: 100vh;
+  scroll-snap-align: start;
 }
 
 .home__wrapper {
@@ -100,44 +95,26 @@ a {
 }
 
 .home__image {
-  max-height: calc(100vh - 120px);
+  max-height: 700px;
 }
 
 .home__text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 .home__text h2 {
   padding-top: 20px;
 }
 
-.email {
-  text-decoration: none;
-  color: #bebebe;
-}
-
-.email :hover {
-  color: rgb(162, 0, 255);
-}
-
-.discord__link {
-  text-decoration: none;
-}
-
-.discord__link :hover {
-  color: rgb(162, 0, 255);
-}
-
-.github__link :hover {
+.contacts__item :hover {
   color: rgb(162, 0, 255);
 }
 
 .skills__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding-top: 20px;
   width: 100%;
   font-size: 1.25rem;
 }
@@ -150,10 +127,8 @@ a {
 .skills__wrapper ul li {
   font-size: 1rem;
 }
-.code__inner {
-  padding-top: 40px;
-  /* display: flex;
-  justify-content: space-between; */
+.code__wrapper {
+  padding-top: 20px;
 }
 
 .skills__inner {
@@ -172,26 +147,37 @@ a {
   background-color: rgb(37, 37, 37);
   margin: 10px 0;
 }
+
 .footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 60px;
   padding: 10px 0;
-  border-top: 1px solid #bebebe;
-  line-height: 1.2rem;
+  border-top: 1px solid rgb(37, 37, 37);
 }
 
 .footer a {
   font-size: 2rem;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
-.footer a :hover{
+.footer a :hover {
   color: rgb(162, 0, 255);
 }
 
-.footer__inner{
+.rsschool-logo img {
+  height: 50px;
+  padding-top: 10px;
+  filter: invert(80%) sepia(0%) saturate(0%) hue-rotate(177deg) brightness(95%) contrast(94%);
+}
+
+.rsschool-logo :hover {  
+  transform: scale(0.92);
+  transition: all 0.3s ease;
+}
+
+.footer__inner {
   display: flex;
   align-items: center;
 }
@@ -200,15 +186,13 @@ a {
   padding-top: 10px;
 }
 
-.english__inner {
-  padding-top: 40px;
+.english__wrapper {
+  padding-top: 20px;
 }
 
 .english__inner ul li {
   font-size: 1rem;
 }
-
-
 
 .footer-helper {
   height: calc(100vh - 60px);

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/d329a077e2.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <title>CV</title>
   </head>
@@ -15,33 +16,31 @@
           <div class="home__wrapper">
             <div class="home__text">
               <h1>krylov.alexey</h1>
-              <p><span class="yellow_text">{</span> Frontend developer <span class="yellow_text">}</span> heavily influenced by&nbsp;visual arts, interactions and&nbsp;UX. <br>  Gravitating around design and code. Addicted to&nbsp;games, dirtbikes and minimalism.</p>
+              <p>
+                <span class="yellow_text">{</span> Frontend developer <span class="yellow_text">}</span> heavily influenced by&nbsp;visual arts, interactions and&nbsp;UX. <br />
+                Gravitating around design and code. Addicted to&nbsp;games, good cofee and&nbsp;minimalism.
+              </p>
               <h2>contacts()</h2>
               <ul>
-                <li>
-                  <a class="discord__link" href="https://discordapp.com/users/ADLINN9697/" target="_blank">
-                  <span class="yellow_text">discord:</span></a> ADLINN#9697
-                </li>
-                <li>
-                  <a class="email" href="mailto:turn2river@gmail.com"><span class="yellow_text">email:</span></a> turn2river@gmail.com
-                </li>
-                <li>
-                  <a class="github__link" href="https://github.com/turn2river" target="_blank">
-                    <span class="yellow_text">github:</span></a> /turn2river
-                </li>              
+                <li class="contacts__item"><a class="contacts__item-link" href="https://discordapp.com/users/ADLINN9697/" target="_blank"> discord:</a> ADLINN#9697</li>
+                <li class="contacts__item"><a class="contacts__item-link" href="mailto:turn2river@gmail.com">email:</a> turn2river@gmail.com</li>
+                <li class="contacts__item"><a class="contacts__item-link" href="https://github.com/turn2river" target="_blank">github:</a> /turn2river</li>
+              </ul>
             </div>
             <div>
-              <img class="home__image" src="./assets/AlexeyKrylovPhoto.png" alt="Alexey Krylov Photo" />
+              <figure>
+                <img class="home__image" src="./assets/AlexeyKrylovPhoto.png" alt="Alexey Krylov Photo" />
+              </figure>
             </div>
           </div>
           <a class="scroll-button" href="#skills">
-            <p class="scroll-down"><i class="fas fa-chevron-down"></i></i></p>
+            <p class="scroll-down"><i class="fas fa-chevron-down"></i></p>
           </a>
         </section>
         <section class="section footer-helper" id="skills">
           <a class="scroll-button" href="#home">
             <p class="scroll-up"><i class="fas fa-chevron-up"></i></p>
-          </a>          
+          </a>
           <div class="skills__wrapper">
             <h2>skills()</h2>
             <div class="skills__inner">
@@ -70,7 +69,7 @@
                 </ul>
               </div>
               <div class="skills-experience">
-                <h3>experience</h3>                  
+                <h3>experience</h3>
                 <ul>
                   <li>level designer / 4+ years</li>
                   <li>3D artist / 4+ years</li>
@@ -78,7 +77,7 @@
                 </ul>
               </div>
               <div class="skills-education">
-                <h3>education</h3>                                
+                <h3>education</h3>
                 <ul>
                   <li>RS school</li>
                   <li>GeekBrains</li>
@@ -87,46 +86,44 @@
               </div>
             </div>
           </div>
-          <div class="code__inner">
+          <div class="code__wrapper">
             <div class="code-example">
-              <h3>codeExamples</h3>            
+              <h2>codeExamples()</h2>
               <p>
-               <code>
+                <code>
                   function sortArray(array){ <br />
                   let oddNums = array.filter((x) => x % 2).sort((a, b) => a - b); <br />
                   return array.map((x) => (x % 2 ? oddNums.shift() : x)); <br />
                   };
-               </code>
+                </code>
               </p>
               <p>
                 <code>
                   let maxRedigit = function(num) { <br />
-                    return num &#x26;lt 100 || num &#x3E; 999 ? null : +num.toString().split(&#x22;&#x22;).map((x) =&#x3E; +x).sort((a, b) =&#x3E; b - a).join(&#x27;&#x27;); <br />
+                  return num &#x26;lt 100 || num &#x3E; 999 ? null : +num.toString().split(&#x22;&#x22;).map((x) =&#x3E; +x).sort((a, b) =&#x3E; b - a).join(&#x27;&#x27;); <br />
                   };
                 </code>
               </p>
             </div>
           </div>
-          <div class="english__inner">
-            <h3>englishLevel</h3>            
+          <div class="english__wrapper">
+            <h2>englishLevel()</h2>
             <ul>
               <li>Intermediate(B1+)</li>
-              <li>Graduated from school with in-depth study of the English language. </li>
+              <li>Graduated from school with in-depth study of the English language.</li>
             </ul>
           </div>
-          
         </section>
       </main>
       <footer class="footer">
-        
-          <div class="footer__inner">
-            <span>2021 &copy; Alexey Krylov</span> 
-            <a href="https://github.com/turn2river" target="_blank"><i class="fab fa-github-square"></i></a>
-          </div>
-        
+        <div class="footer__inner">
+          <p>2021 &copy; Alexey Krylov</p>
+          <a href="https://github.com/turn2river" target="_blank"> <i class="fab fa-github-square"></i></a>
+        </div>
+
         <div>
-          <a href="https://rs.school/js/" target="_blank">
-            <img src="https://rs.school/images/rs_school_js.svg" alt="rsschoollogo" width="100">
+          <a class="rsschool-logo" href="https://rs.school/js/" target="_blank">
+            <img src="./assets/rs_school_js.svg" alt="rsschoollogo" />
           </a>
         </div>
       </footer>
