@@ -46,6 +46,37 @@ a {
   padding: 0 20px;
 }
 
+.header_nav {
+  position: fixed;
+  background-color: rgba(19, 19, 19, 0.75);
+  height: 50px;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.header_nav__list {
+  display: flex;
+  max-width: 1200px;
+  justify-content: start;
+  align-items: center;
+  margin: 0 auto;
+  height: 50px;
+}
+
+.header_nav__item {
+  padding-right: 40px;  
+  font-weight: 600;
+}
+
+.header_nav__item :hover { 
+  color: rgb(162, 0, 255);
+}
+
+.active { 
+  color: rgb(162, 0, 255);
+}
+
 .scroll-button {
   text-decoration: none;
   font-size: 1.1rem;
@@ -58,12 +89,13 @@ a {
   position: absolute;
   top: calc(100vh - 45px);
   color: rgb(230, 175, 27);
-  font-size: 2rem;
+  font-size: 12px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.scroll-down :hover {
+.scroll-down__link :hover {
   transform: translateY(-5px);
-  transition: all 0.3s ease-in-out;
+  color: rgb(162, 0, 255);
 }
 
 .scroll-up {

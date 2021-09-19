@@ -11,6 +11,16 @@
   </head>
   <body>
     <div class="page__container">
+      <header class="header">
+        <nav class="header_nav">
+          <ul class="header_nav__list" >
+            <li class="header_nav__item"><a class="active" href="#home" onclick="myFunction(event)">home()</a></li>
+            <li class="header_nav__item"><a href="#skills" onclick="myFunction(event)">skills()</a></li>
+            <li class="header_nav__item"><a href="#projects" onclick="myFunction(event)">projects()</a></li>
+            <li class="header_nav__item"><a href="#contacts" onclick="myFunction(event)">contacts()</a></li>
+          </ul>
+        </nav>
+      </header>
       <main class="main">
         <section class="section" id="home">
           <div class="home__wrapper">
@@ -18,11 +28,11 @@
               <h1>krylov.alexey</h1>
               <p>
                 <span class="yellow_text">{</span> Frontend developer <span class="yellow_text">}</span> heavily influenced by&nbsp;visual arts, interactions and&nbsp;UX. <br />
-                Gravitating around design and code. Addicted to&nbsp;games, good coffee and&nbsp;minimalism.
+                Gravitating around design and code. Addicted to&nbsp;games, movies and&nbsp;good coffee.
               </p>
               <h2>contacts()</h2>
               <ul>
-                <li class="contacts__item"><a class="contacts__item-link" href="https://discordapp.com/users/ADLINN9697/" target="_blank"> discord:</a> ADLINN#9697</li>
+                <li class="contacts__item"><a class="contacts__item-link" href="https://discordapp.com/users/285421971670564864" target="_blank"> discord:</a> ADLINN#9697</li>
                 <li class="contacts__item"><a class="contacts__item-link" href="mailto:turn2river@gmail.com">email:</a> turn2river@gmail.com</li>
                 <li class="contacts__item"><a class="contacts__item-link" href="https://github.com/turn2river" target="_blank">github:</a> /turn2river</li>
               </ul>
@@ -33,14 +43,11 @@
               </figure>
             </div>
           </div>
-          <a class="scroll-button" href="#skills">
-            <p class="scroll-down"><i class="fas fa-chevron-down"></i></p>
+          <a class="scroll-down__link" href="#skills">
+            <p class="scroll-down">scrolldown()</p>
           </a>
         </section>
         <section class="section footer-helper" id="skills">
-          <a class="scroll-button" href="#home">
-            <p class="scroll-up"><i class="fas fa-chevron-up"></i></p>
-          </a>
           <div class="skills__wrapper">
             <h2>skills()</h2>
             <div class="skills__inner">
@@ -128,5 +135,14 @@
         </div>
       </footer>
     </div>
+    <script>
+      function myFunction(e) {
+        let elems = document.querySelectorAll(".active");
+        [].forEach.call(elems, function (el) {
+          el.classList.remove("active");
+        });
+        e.target.className = "active";
+      }
+    </script>
   </body>
 </html>
