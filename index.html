@@ -13,11 +13,13 @@
     <div class="page__container">
       <header class="header">
         <nav class="header_nav">
-          <ul class="header_nav__list" >
-            <li class="header_nav__item"><a class="active" href="#home" onclick="myFunction(event)">home()</a></li>
-            <li class="header_nav__item"><a href="#skills" onclick="myFunction(event)">skills()</a></li>
-            <li class="header_nav__item"><a href="#projects" onclick="myFunction(event)">projects()</a></li>
+          <ul class="header_nav__list">
+            <li class="header_nav__item"><a href="#home">home()</a></li>
+            <li class="header_nav__item"><a href="#skills">skills()</a></li>
+            <li class="header_nav__item"><a href="#projects">projects()</a></li>
             <!-- <li class="header_nav__item"><a href="#contacts" onclick="myFunction(event)">contacts()</a></li> -->
+            <!-- Make snaps -->
+            <!-- Make projects section -->
           </ul>
         </nav>
       </header>
@@ -47,7 +49,7 @@
             <p class="scroll-down">scrolldown()</p>
           </a>
         </section>
-        <section class="section footer-helper" id="skills">
+        <section class="section" id="skills">
           <div class="skills__wrapper">
             <h2>skills()</h2>
             <div class="skills__inner">
@@ -87,11 +89,29 @@
                 <h3>education</h3>
                 <ul>
                   <li>RS school</li>
-                  <li>GeekBrains</li>
                   <li>MSU of Printing Arts</li>
                 </ul>
               </div>
             </div>
+          </div>
+
+          <div class="english__wrapper">
+            <h2>englishLevel()</h2>
+            <ul>
+              <li>Intermediate(B1+)</li>
+              <li>Graduated from school with in-depth study of the English language.</li>
+            </ul>
+          </div>
+        </section>
+        <section class="section footer-helper" id="projects">
+          
+          <div class="projects">
+            <h2>projects()</h2>
+            <ul class="projects__list">
+              <li class="projects__item"><a href="http://shiny-grandfather.surge.sh/" target="__blank" class="projects__link"><img class="projects__img" src="./assets/vikings.png" alt="vikings_site"></a></li>
+              <li class="projects__item"><a href="http://interiorshop-krylov.surge.sh/" target="__blank" class="projects__link"><img class="projects__img" src="./assets/shop.png" alt="interiorshop_site"></a></li>
+              <li class="projects__item"><a href="https://turn2river.github.io/rsschool-cv/" target="__blank" class="projects__link"><img class="projects__img" src="./assets/cv.png" alt="thisCV"></a></li>
+            </ul>
           </div>
           <div class="code__wrapper">
             <div class="code-example">
@@ -104,15 +124,7 @@
                   };
                 </code>
               </p>
-              
             </div>
-          </div>
-          <div class="english__wrapper">
-            <h2>englishLevel()</h2>
-            <ul>
-              <li>Intermediate(B1+)</li>
-              <li>Graduated from school with in-depth study of the English language.</li>
-            </ul>
           </div>
         </section>
       </main>
@@ -130,13 +142,13 @@
       </footer>
     </div>
     <script>
-      function myFunction(e) {
-        let elems = document.querySelectorAll(".active");
-        [].forEach.call(elems, function (el) {
-          el.classList.remove("active");
-        });
-        e.target.className = "active";
-      }
+      // function myFunction(e) {
+      //   let elems = document.querySelectorAll(".active");
+      //   [].forEach.call(elems, function (el) {
+      //     el.classList.remove("active");
+      //   });
+      //   e.target.className = "active";
+      // }
     </script>
   </body>
 </html>

@@ -53,6 +53,7 @@ a {
   width: 100%;
   left: 0;
   right: 0;
+  
 }
 
 .header_nav__list {
@@ -62,14 +63,20 @@ a {
   align-items: center;
   margin: 0 auto;
   height: 50px;
+  
 }
 
 .header_nav__item {
   padding-right: 40px;
   font-weight: 600;
+  
 }
 
-.header_nav__item :hover {
+.header_nav__item a {
+  transition: color 0.3s ease;
+}
+
+.header_nav__item a:hover {
   color: rgb(162, 0, 255);
 }
 
@@ -193,29 +200,32 @@ a {
   border-top: 1px solid rgb(37, 37, 37);
 }
 
-.footer a {
+.footer__inner i {
   font-size: 2rem;
   padding-left: 10px;
+  transition: color 0.3s ease;
 }
 
-.footer a :hover {
+.footer__inner a :hover {
   color: rgb(162, 0, 255);
+  
 }
 
 .rsschool-logo img {
   height: 50px;
   padding-top: 10px;
   filter: invert(80%) sepia(0%) saturate(0%) hue-rotate(177deg) brightness(95%) contrast(94%);
+  transition: transform 0.3s ease;
 }
 
 .rsschool-logo :hover {
-  transform: scale(0.92);
-  transition: all 0.3s ease;
+  transform: scale(0.92); 
 }
 
 .footer__inner {
   display: flex;
   align-items: center;
+  
 }
 .english__inner ul {
   list-style-type: none;
@@ -232,6 +242,35 @@ a {
 
 .footer-helper {
   height: calc(100vh - 60px);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px 0;
+}
+.projects__list {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects__item {
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.projects__img {
+  width: 350px;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;  
+}
+
+.projects__item:hover img {  
+  transform: scale(1.1);
 }
 
 @media (max-width: 1359px) {
@@ -256,7 +295,6 @@ a {
     display: none;
   }
   .home__image {
-
   }
 }
 
