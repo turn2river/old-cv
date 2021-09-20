@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/d329a077e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <title>CV</title>
@@ -40,8 +45,8 @@
               </ul>
             </div>
             <div>
-              <figure>
-                <img class="home__image" src="./assets/AlexeyKrylovPhoto.png" alt="Alexey Krylov Photo" />
+              <figure class="home_image__wrapper">
+                <img class="home_image" src="./assets/AlexeyKrylovPhoto.png" alt="Alexey Krylov Photo" />
               </figure>
             </div>
           </div>
@@ -111,13 +116,13 @@
                 <a href="http://shiny-grandfather.surge.sh/" target="__blank" class="projects__link"
                   ><div class="img__container"><img class="projects__img" src="./assets/vikings.png" alt="vikings_site" /></div
                 ></a>
-                <h4>Vikings</h4><p>
+                <h4>Vikings</h4>
+                <p>
                   techUsed() <span class="yellow_text">{</span>
                   HTML, CSS, JS;
                   <span class="yellow_text">}</span>
                 </p>
                 <p>Website study project. Tutorial from channel "0 to 1"</p>
-                
               </li>
               <li class="projects__item">
                 <a href="http://interiorshop-krylov.surge.sh/" target="__blank" class="projects__link"
@@ -130,7 +135,6 @@
                   <span class="yellow_text">}</span>
                 </p>
                 <p>First HTML CSS study project.</p>
-                
               </li>
               <li class="projects__item">
                 <a href="https://turn2river.github.io/rsschool-cv/" target="__blank" class="projects__link"
@@ -150,7 +154,7 @@
             <div class="code-example">
               <h2>codeExamples()</h2>
               <p>
-                <code>
+                <code class="">
                   function sortArray(array){ <br />
                   let oddNums = array.filter((x) => x % 2).sort((a, b) => a - b); <br />
                   return array.map((x) => (x % 2 ? oddNums.shift() : x)); <br />
@@ -174,8 +178,10 @@
         </div>
       </footer>
     </div>
-    <script>     
-      console.log( 'Score 150/150 \n- Вёрстка валидная +10 \n- Вёрстка семантическая +20 \n- Для оформления СV используются css-стили +10 \n- Контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы +10 \n- Вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется +10 \n- Есть адаптивное бургер-меню. +10 \n- На странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt (может быть пустым) +10 \n- Контакты для связи и перечень навыков оформлены в виде списка ul > li +10 \n- CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10 \n- CV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода. +10 \n- CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10 \n- CV выполнено на английском языке +10 \n- Выполнены требования к Pull Request. +10 \n- Eсть видеорезюме автора CV +0 \n- Дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (это дополнительные 10 баллов, поэтому некоторый субъективизм в оценке может присутствовать) +10' );
+    <script>
+      console.log(
+        "Score 150/150 \n- Вёрстка валидная +10 \n- Вёрстка семантическая +20 \n- Для оформления СV используются css-стили +10 \n- Контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы +10 \n- Вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется +10 \n- Есть адаптивное бургер-меню. +10 \n- На странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt (может быть пустым) +10 \n- Контакты для связи и перечень навыков оформлены в виде списка ul > li +10 \n- CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10 \n- CV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода. +10 \n- CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10 \n- CV выполнено на английском языке +10 \n- Выполнены требования к Pull Request. +10 \n- Eсть видеорезюме автора CV +0 \n- Дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (это дополнительные 10 баллов, поэтому некоторый субъективизм в оценке может присутствовать) +10"
+      );
     </script>
   </body>
 </html>

@@ -131,7 +131,7 @@ a {
   justify-content: space-between;
 }
 
-.home__image {
+.home_image {
   max-height: 700px;
 }
 
@@ -171,7 +171,7 @@ a {
 .skills__inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   max-width: 1200px;
   padding-top: 10px;
@@ -180,6 +180,7 @@ a {
 
 .skills__item {
   padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .code-example p {
@@ -244,10 +245,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 100px 0;
-}
-.projects__list {
   margin: 20px 0;
+}
+.projects__list {  
   display: flex;
   justify-content: space-between; 
 }
@@ -258,13 +258,14 @@ a {
 .img__container {
   overflow: hidden;
   line-height: 0;
+  margin-top: 20px;
 }
 .projects__item h4{
   margin-top: 20px;
 }
 
 .projects__item p{
-margin: 20px 0;
+margin: 10px 0;
 color: #bebebe;
 
 }
@@ -279,12 +280,7 @@ color: #bebebe;
 }
 
 .img__container:hover img {
-  transform: scale(1.1);  
-  
-}
-
-.img__container:hover {
-  outline: 2px solid rgb(162, 0, 255);
+  transform: scale(1.1);
 }
 
 @media (max-width: 1359px) {
@@ -308,6 +304,12 @@ color: #bebebe;
     max-width: 75%;
     margin: 5px 0;
   }
+  .img__container {
+    margin: 0;
+  }
+  .projects__item h4 {
+    margin-top: 0;
+  }
 }
 
 @media (max-height: 900px) {
@@ -330,19 +332,19 @@ color: #bebebe;
   }
 }
 
-@media (max-width: 796px) {
-  .home__image {
-    max-width: 320px;
-    margin: 0 auto;
-    left: -100px;
+@media (max-width: 860px) {
+  .home_image {
+    max-width: 300px;       
   }
   .home__wrapper {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
+  .
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   h1 {
     font-size: 2rem;
   }
@@ -351,14 +353,9 @@ color: #bebebe;
   }
   h3 {
     font-size: 1rem;
+  }  
+  * {
+    font-size: 14px;
   }
-  /* .projects__item {
-    display: block;
-    width: 260px;
-    height: 150px;
-  }
-  .projects__list {
-    align-items: center;
-  } */
 }
 
