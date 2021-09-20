@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/d329a077e2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <link rel="stylesheet" href="highlight/styles/base16/darcula.min.css" />
+    <script src="highlight/highlight.min.js"></script>
     <script>
       hljs.initHighlightingOnLoad();
     </script>
@@ -155,14 +155,17 @@
           <div class="code__wrapper">
             <div class="code-example">
               <h2>codeExamples()</h2>
-              <p>
-                <code class="">
-                  function sortArray(array){ <br />
-                  let oddNums = array.filter((x) => x % 2).sort((a, b) => a - b); <br />
-                  return array.map((x) => (x % 2 ? oddNums.shift() : x)); <br />
-                  };
+              <pre class="pre_code">
+                <code class="code__item language-javascript">
+module.exports = function reverse (n) {
+  if (n < 0) {
+    n = -n;
+    return n = +n.toString().split("").reverse().join("");    
+  }
+  return n = +n.toString().split("").reverse().join("");      
+}
                 </code>
-              </p>
+              </pre>
             </div>
           </div>
         </section>

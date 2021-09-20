@@ -412,10 +412,29 @@ a {
   .burger {
     padding: 10px;
   }
+ .code__item span, .code__item{
+   font-size: 10px;
+ }
+}
+@media screen and (max-width: 460px) {
+  .code__item span, .code__item{
+    font-size: 8px;
+  }
+  
 }
 
-@media (max-width: 360px) {
+
+@media screen and (max-width: 360px) {
   .home_image {
     max-width: 240px;
   }
+  .code__item span, .code__item{
+    font-size: 6px;
+  }
+}
+
+pre code.hljs {
+  margin: 0;
+  padding: 5px;
+  background-color: #0f0f0f;
 }
