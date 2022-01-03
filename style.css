@@ -172,7 +172,7 @@ a {
 .skills__inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
   max-width: 1200px;
   padding-top: 10px;
@@ -327,7 +327,7 @@ a {
   }
 }
 
-@media (max-height: 900px) {
+@media (max-height: 799px) {
   .section {
     height: max-content;
   }
@@ -337,7 +337,7 @@ a {
   }
 }
 
-@media (max-height: 900px) and (max-width: 420px) {
+@media (max-height: 799px) and (max-width: 420px) {
   .section {
     height: max-content;
   }
@@ -412,23 +412,24 @@ a {
   .burger {
     padding: 10px;
   }
- .code__item span, .code__item{
-   font-size: 10px;
- }
+  .code__item span,
+  .code__item {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 460px) {
-  .code__item span, .code__item{
+  .code__item span,
+  .code__item {
     font-size: 8px;
   }
-  
 }
-
 
 @media screen and (max-width: 360px) {
   .home_image {
     max-width: 240px;
   }
-  .code__item span, .code__item{
+  .code__item span,
+  .code__item {
     font-size: 6px;
   }
 }
