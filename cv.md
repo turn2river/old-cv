@@ -77,5 +77,5 @@ let maxRedigit = function(num) {
 	-  quit due to life circumstances
 
 ## English level
-### Intermediate(B1+)
+### Intermediate(B2+)
 - Graduated from school with in-depth study of the English language. 
