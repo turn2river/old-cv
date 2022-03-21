@@ -1,6 +1,7 @@
 # Alexey Krylov
 ![photo](Aleksey_Krylov_.png)  
 
+⭐ CV ⭐
 ## Contacts
 email: turn2river@gmail.com   
 discord: ADLINN#9697
