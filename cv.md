@@ -2,6 +2,8 @@
 ![photo](Aleksey_Krylov_.png)  
 
 ⭐ CV ⭐
+
+:star: again :star: 
 ## Contacts
 email: turn2river@gmail.com   
 discord: ADLINN#9697
