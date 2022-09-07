@@ -1,1 +1,1 @@
-[My CV is here](https://turn2river.github.io/rsschool-cv)
+[CV](https://turn2river.github.io/rsschool-cv-old/)
